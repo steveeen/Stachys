@@ -1,0 +1,810 @@
+/* Main form */
+div.pages {
+	padding: 10px 0px 30px 0px;
+	margin-right: 1px;
+	overflow: auto;
+}
+div#guest_heading_layer {
+	background: #e3e3e3;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f6f6f6), to(#e3e3e3));
+	background: -moz-linear-gradient(top, #f6f6f6, #e3e3e3);
+	border-bottom: 1px solid #fff;
+	position: relative;
+	z-index: 9;
+	width: auto !important;
+	width: 753px;
+}
+p.answer_teaser {
+	float: right;
+	margin: 20px 20px 0 0;
+	font-size: 11px;
+	line-height: 14px;
+	color: #888;
+}
+p.answer_teaser a {
+	margin-left: 8px;
+	border-left: 1px solid #ddd;
+	padding-left: 12px;
+}
+form.styled {
+	clear: both;
+	float: left;
+	padding: 0px 14px 0px 13px;
+}
+form.styled div.form_section {
+	float: left;
+	clear: both;
+	
+
+	background: #fff;
+}
+form.styled div.upper_section {
+	margin-bottom: 2px;
+}
+form.styled div.form_section h3 {
+	padding: 10px 10px 0 15px;
+	margin: 0;
+	font-size: 10px;
+	font-weight: bold;
+	color: #999;
+	float: left;
+	clear: both;
+}
+form.styled div.form_contents {
+	padding: 8px 7px 7px 13px;
+	float: left;
+	clear: both;
+	background: #fff;
+}
+form.styled div.form_footer {
+	clear: both;
+	width: 753px;
+	padding-top: 10px;
+	position: relative;
+	overflow: visible;
+}
+p#submit_button {
+	width: 250px;
+	margin: 0px 0 0 1px;
+	clear: left;
+}
+p#clear_button,
+p#save_button,
+p#load_button {
+	float: right;
+	width: 60px;
+	margin: 0px;
+}
+p#clear_button {
+	width: 120px;
+	margin-right: 5px;
+}
+p#save_button {
+	margin-right: 5px;
+}
+
+
+
+div#searches_drop {
+	width: 175px;
+	position: absolute;
+	top: 40px;
+	right: -2px;
+	z-index: 999;
+}
+div#searches_drop ul {
+	margin-bottom: 0px;
+	padding: 11px 10px;
+}
+div#searches_drop ul li {
+	line-height: 19px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+div#searches_drop ul li a.delete_saved_search {
+	font-size: 12px;
+	text-decoration: none;
+	color: #999;
+	margin-right: 3px;
+}
+div#searches_drop ul li a.delete_saved_search:hover {
+	color: #f83265;
+	cursor: pointer;
+}
+div#save_load_contents {
+	width: 300px;
+	position: absolute;
+	z-index: 999;
+	bottom: 30px;
+	right: 63px;
+}
+div#save_load_contents label {
+	font-weight: bold;
+	font-size: 12px;
+}
+div#save_load_contents input {
+	border: 1px solid #ddd;
+	outline: none;
+	background: #fff;
+	margin: 0px;
+	padding: 3px 8px;
+	color: #555;
+}
+div#save_load_contents p.btn {
+	width: 120px;
+	margin: 6px 0px 0px 0px;
+}
+
+
+form p#clear_button a {color: #999;}
+img#ajax_spinner {
+	margin-left: 5px;
+	position: absolute;
+	bottom: 19px;
+	left: 140px;
+}
+div.form_section { display: none; }
+div#pre_load {
+	text-align: center;
+}
+div#pre_load h4 {
+	font-size: 14px;
+	font-weight: normal;
+	margin: 30px 0 10px;
+	color: #999;
+}
+body div#thin_upgrade_ad {
+	background-color: #fff;
+	margin: 0 0 10px;
+	width:729px !important;
+	float: left;
+}
+span.location_error { color: #f83562; }
+p.join_teaser {
+	clear: both;
+	padding: 10px 20px 10px;
+	color: #777;
+	margin-bottom: 0;
+}
+body.logged_out p#submit_button {
+	margin-bottom: 17px;
+}
+div#match_results {
+	width: 556px;
+	margin-top: 35px;
+	margin-left: 15px;
+}
+div.match_row {
+	border: 1px solid #ddd;
+	border-bottom: none;
+	background: #fafafa;
+	padding: 0px;
+	position: relative;
+	margin: 0px;
+	width: 553px;
+}
+div.match_row_last { border-bottom: 1px solid #ddd; }
+div.wrap {
+	background: #f6f6f6;
+	overflow: auto;
+	margin-right: 125px;
+	padding-top: 20px;
+}
+div.user_info {
+	float: left;
+	line-height: 16px;
+	width: 410px;
+	padding-left: 15px;
+}
+div.user_info p {
+	font-size: 12px;
+}
+div.essay {
+	clear: left;
+	width: 395px;
+	color: #666;
+	margin-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	min-height: 60px;
+	overflow: hidden;
+	font-size: 12px;
+}
+h4.match_row_screenname {
+	font-size: 15px;
+	line-height: 16px;
+	height: 16px;
+	padding-bottom: 2px;
+}
+h4.match_row_screenname a,
+h4.match_row_screenname a span,
+h4.match_row_screenname div.alist_badge img {
+	vertical-align: top;
+	text-decoration: none;
+}
+h4.match_row_screenname a:hover span.username {
+	text-decoration: underline;
+}
+body div#main_content h4.match_row_screenname div.alist_badge img {
+	position: static;
+	padding: 0 0 0 3px;
+}
+div.user_info p.aso,
+div.user_info p.location { font-size: 11px; line-height: 14px; }
+p.aso span { color: #bbb; }
+div.percentages {
+	position: absolute;
+	top: 17px;
+	right: 0px;
+	width: 125px;
+}
+div.percentages p {
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 21px;
+}
+div.percentages p.match { color: #f83562; }
+div.percentages p.friend { color: #2962a3; }
+div.percentages p.enemy { color: #555; }
+span.unfilled {
+	color: #999; 
+	font-style: italic;
+}
+div.match_row p.btn {
+	width: 96px;
+	margin: 0 auto;
+}
+div.match_row p.unhider {
+	display: none;
+}
+div.match_row div.actions {
+	width: 125px;
+	position: absolute;
+	right: 0px;
+	bottom: 35px;
+	text-align: center;
+}
+ul#personality-rating { margin: 5px auto; }
+div#pro_match_results {
+	margin: 35px 0px 0px 0px;
+	width: 182px;
+	float: right;
+	background: #eee;
+}
+div#pro_match_results h2 {
+	color: #555;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 10px 15px 5px 15px;
+	text-align: left;
+}
+div#pro_match_results ul {
+	margin-bottom: 0;
+	padding: 0px 0px;
+}
+div#pro_match_results ul li {
+	border-top: 1px solid #ddd;
+	position: relative;
+	padding: 15px 15px 15px 15px;
+	margin: 0px;
+}
+div#pro_match_results a.user_image {
+	float: none;
+	margin: 0px;
+	position: absolute;
+	top: 14px;
+	left: 15px !important;
+	left: 0px;
+	z-index: 3;
+	height: 82px;
+	width: 82px;
+	
+}
+body#p_match div#pro_match_results a.user_image img.mask {
+	padding: 0px !important;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 9;
+	display: block !important;
+	display: none;
+}
+div#pro_match_results span.online-now-notice {
+	height: 21px;
+}
+div#pro_match_results p { margin: 0px; }
+div#pro_match_results a.im_bubble {
+	position: relative;
+	top: -1px;
+}
+div#pro_match_results p.aso {
+	font-size: 10px;
+	line-height: 13px;
+	color: #666;
+}
+div#pro_match_results p.aso span { color: #bbb; }
+div#pro_match_results p.aso span.location {
+	color: #999;
+	display: block;
+}
+div#pro_match_results p.username {
+	margin-top: 6px;
+}
+div#pro_match_results p.username a {
+	font-weight: bold;
+	color: #f83562;
+}
+div#pro_match_results div.perc_block {
+	background: #f6f6f6;
+	font-size: 12px;
+	height: 65px;
+	text-align: center;
+	margin-right: 0px;
+	padding-top: 31px;
+	margin-top: -15px;
+	padding-left: 2px;
+	margin-left: 97px;
+	color: #666;
+	line-height: 19px;
+}
+div#pro_match_results div.perc_block span { display: block; }
+div#pro_match_results div.perc_block span.match { color: #f83562; }
+div#pro_match_results div.perc_block span.friend { color: #2962a3; }
+div#pro_match_results div.perc_block span.enemy { color: #555; }
+
+
+ul.pagination {
+	margin-left: 15px;
+}
+div.pro_match_row h4.match_row_screenname a {
+	color: #f83265;
+}
+div.match_row p.activity {
+	margin: 15px 15px 0 97px;
+	font-weight: bold;
+	color: #666;
+	font-size: 11px;
+	line-height: 14px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #ddd;
+}
+div.match_row p.activity span {
+	margin-right: 5px;
+	font-weight: normal;
+}
+li.pro_unfound {
+	margin: 20px 0;
+	color: #999;
+}
+li.pro_unfound p {
+	font-family: Georgia, serif;
+	font-style: italic;
+	padding: 15px 0px 20px 0px;
+	line-height: 1.35em;
+}
+li.pro_unfound p span {
+	display: block;
+	text-align: right;
+	font-size: 11px;
+}
+li.pro_unfound img {
+	display: block;
+	padding-bottom: 20px;
+	padding-left: 5px;
+}
+div#matchNoResults {
+	background: url(http://akcdn.okccdn.com/media/img/misc/bot-blush.png) no-repeat 20px top;
+	height: 250px;
+	float: left;
+	clear: both;
+	padding: 0px;
+	margin: 50px 20px;
+	width: 650px;
+}
+div#matchNoResults p {
+	padding: 30px 10px 0px 240px;
+	font-family: Georgia, serif;
+	font-size: 14px;
+	font-style: italic;
+	color: #999;
+}
+div#matchNoResults span {
+	display: block;
+	font-size: 12px;
+	padding: 10px 20px 0px 20px;
+	text-align: right;
+}
+div#psi_holder,
+div#csi_holder {
+	clear: both;
+	float:left;
+	margin-top:3px;
+}
+ul#similar_sort_drop p {
+	margin-bottom: 5px;
+}
+ul#similar_sort_drop li p input {
+	border:1px solid #fdc1d0;
+	color:#f83562;
+	font-size:10px;
+	padding:4px;
+	width: 178px;
+}
+div#matchQuestionsInfo {
+	clear: both;
+	padding: 10px;
+	text-align: center;
+	color: #666;
+}
+form.styled div#similar_sort div.drop_wrap {
+	width: 200px;
+}
+p.linkout {
+	margin: 20px 5px;
+	font-weight: bold;
+}
+p.linkout a {
+	color: #60a73c;
+	font-size: 11px;
+	line-height: 14px;
+}
+p.linkout a span {
+	display: block;
+	padding-top: 5px;
+	text-decoration: underline;
+}
+p.linkout a:hover,
+p.linkout a:hover span {
+	text-decoration: none;
+}
+
+
+/* Stoplight ------------------------------------------------------------------ */
+div.contact_notices {
+	clear: both;
+	width: 538px;
+	background: #eee;
+	color: #666;
+	font-size: 10px;
+	line-height: 16px;
+	padding-left: 15px;
+}
+div.contact_notices p {
+	margin: 0;
+	padding: 5px 0;
+}
+div.contact_notices p em {
+	font-style: normal;
+}
+div.contact_notices p span.icon {
+	display: block;
+	float: left;
+	margin: 2px 6px 2px 0;
+	text-align: left;
+	text-indent: -9999px;
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+div.contact_notices p.uncontacted span.icon { background: #2963A4; color: #2963A4; }
+div.contact_notices p.stoplight.red span.icon { background: #ca2f1a; color: #ca2f1a; }
+div.contact_notices p.stoplight.yellow span.icon { background: #f5a83a; color: #f5a83a;  }
+div.contact_notices p.stoplight.green span.icon { background: #457100; color: #457100; }
+div.contact_notices p.stoplight.red { color: #ca2f1a; }
+div.contact_notices p.stoplight.yellow { color: #d87d00; }
+div.contact_notices p.stoplight.green { color: #457100; }
+
+/* Miscellaneous -------------------------------------------------------------- */
+
+div.ad_wrapper,
+div.guest_promo { margin-top: 56px; }
+a.user_image {
+	float: left;
+	margin-right: 15px;
+	width: 82px;
+	height: 82px;
+	overflow: visible;
+	position: relative;
+	-moz-box-shadow: 0 1px 3px #BBBBBB;
+	-webkit-box-shadow: 0 1px 3px #BBBBBB;
+}
+a.usr_image:hover { text-decoration: none; }
+span.online-now-notice {
+	display: block;
+	text-align: center;
+	height: 20px;
+	width: 82px;
+	line-height: 20px;
+	background: #2963a4;
+	color: #fff;
+	font-size: 8px;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 8;
+}
+div.teaser_footer {
+	color: #666;
+	clear: both;
+	margin: 20px;
+}
+div.teaser_footer h2 {
+	margin-bottom: 5px;
+	font-size: 16px;
+	color: #f83562;
+}
+
+/* Logged out widening ----------------------------------------------------- */
+
+body.logged_out div.contact_notices {
+	width: 738px;
+}
+body.logged_out div.match_row {
+	width: 753px;
+}
+body.logged_out div#match_results {
+	width: 756px;
+}
+body.logged_out div.essay {
+	width: 595px;
+}
+
+
+/* Landing match ----------------------------------------------------------- */
+
+form#matchform div.landing h3.title { float: none; }
+form#matchform div.landing h3#title_1 {
+	width: 390px;
+	background: transparent url(http://akcdn.okccdn.com/media/img/backgrounds/match-landing-title-1.png) 0 0 no-repeat;
+}
+form#matchform div.landing h3#title_2 {
+	margin-bottom: 5px;
+	width: 390px;
+	background: transparent url(http://akcdn.okccdn.com/media/img/backgrounds/match-landing-title-2.png) 0 0 no-repeat;
+}
+form#matchform div.landing p.intro_text {
+	color: #555;
+	font-size: 12px;
+}
+form#matchform div.landing {
+	width: 609px;
+	padding: 30px 20px 20px 120px;
+	background: #fff url(http://akcdn.okccdn.com/media/img/backgrounds/match-fish-bg.png) 0 40px no-repeat !important;
+	border: 2px solid #ddd;
+	margin-bottom: 0px;
+	margin-top: 12px;
+}
+form#matchform div.landing p.footnote {
+	margin: 10px 25px 0 0;
+	text-align: right;
+	font-size: 10px;
+	color: #999;
+}
+form#matchform div.landing div.form_contents {
+	background: transparent !important;
+	width: 609px;
+	padding: 0;
+	margin: 0;
+}
+form#matchform div.landing ul#location_interface_drop input.location_input { width: 170px; }
+form#matchform div.landing ul#location_interface_drop p#city-input { width:185px; }
+form#matchform div.landing ul#location_interface_drop p#city-input select {	width: 209px; }
+form#matchform div.landing p#lquery-notice { padding: 0 10px 5px 3px; }
+
+/* Guest Header ------------------------------------------------------------ */
+form#matchform.guest { padding-top: 0px; }
+form#matchform #guest_header {
+	background: #fff;
+	padding: 15px 0px 5px;
+	margin-bottom: 2px;
+	width: 753px;
+}
+body#p_match #main_content #guest_heading_layer h1 {
+	position: static;
+	float: none;
+	margin: 0px;
+	padding: 40px 0 0 26px;
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 24px;
+	letter-spacing: -1px;
+	text-transform: none;
+	color: #f83265;
+	background: none;
+	text-shadow: 0px 1px 0px #fff;
+}
+form#matchform #guest_header p {
+	display: block;
+	color: #777;
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0px 250px 10px 14px;
+}
+form#matchform #guest_header strong {
+	font-size: 13px;
+	display: block;
+	color: #3b9e08;
+	margin: 0px 0px 2px 0px;
+}
+form#matchform p#createyouraccount {
+	width: 265px;
+	position: absolute;
+	top: 27px;
+	right: 25px;
+}
+body#p_match div.matchError {
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+	background: #333;
+	color: #fff;
+}
+
+/* Match map landing ------------------------------------------------------- */
+
+div.from_match_map {
+	clear: both;
+	margin: 15px;
+	padding: 20px 20px 25px;
+	background: #fff url(http://akcdn.okccdn.com/media/img/backgrounds/blue_swoosh2.png) right 80px no-repeat;
+	border: 2px solid #ddd;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+div.from_match_map div.inner {
+	padding: 0px 150px 0px 10px;
+}
+div.from_match_map h2,
+div.from_match_map h3 {
+	margin: 0;
+	font-size: 18px;
+	font-weight: normal;
+	color: #7cb559;
+}
+div.from_match_map h3 {
+	font-size: 15px;
+}
+div.from_match_map p.welcome {
+	margin: 0 0 15px;
+}
+div.from_match_map p {
+	font-size: 11px;
+	color: #555;
+}
+div.from_match_map p.btn {
+	float: left;
+	margin: 0 3px 0 0;
+	width: 180px;
+}
+
+
+
+/*** RATING ***/
+
+.actions .rating span {
+	display: block;
+	font-size: 10px;
+	line-height: 12px;
+	color: #aaa;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.actions .profile_rating {
+	position: relative;
+	margin: 0px 0px 0px auto;
+	bottom: 5px;
+}
+.actions .profile_rating,
+.actions .profile_rating a:hover,
+.actions .profile_rating a:active,
+.actions .profile_rating a:focus,
+.actions .profile_rating .current-rating {
+	background: transparent url(http://akcdn.okccdn.com/media/img/template/rating_stars.png) repeat-x left -100px;
+}
+.actions .profile_rating li {
+	padding: 0px;
+	float: none;
+	height: auto;
+	line-height: auto;
+}
+.actions .profile_rating .current-rating {
+	background-position: left bottom !important;
+}
+.actions .profile_rating {
+	height: 16px !important;
+	width: 90px;
+	padding: 0px !important;
+	background-position: left top !important;
+}
+.actions .profile_rating a {
+	height: 16px;
+}
+.actions .profile_rating a:hover,
+.actions .profile_rating a:active {
+	background-position: left center !important;
+}
+.actions .profile_rating a,
+.actions .profile_rating .current-rating {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-indent: 100em;
+	height: 16px;
+	line-height: 16px;
+	outline: none;
+	overflow: hidden;
+	border: none;
+}
+
+/* Hilary Winston campaign ------------------------------------- */
+
+div.match_row div#hilarywinstonheader {
+	display: none;
+}
+
+body.hilarywinstonmatch div.match_row.match_row_second {
+	border: 1px solid #bbb;
+}
+body.hilarywinstonmatch div.match_row.match_row_second div.actions,
+body.hilarywinstonmatch div.match_row.match_row_second div.essay {
+	display: none;
+}
+body.hilarywinstonmatch div.match_row.match_row_second div.contact_notices {
+	border-top: 1px solid #ddd;
+}
+body.hilarywinstonmatch div.match_row.match_row_second div.wrap {
+	margin-right: 218px;
+	height: 117px;
+	padding: 13px 0;
+}
+body.hilarywinstonmatch div.match_row.match_row_second div#hilarywinstonheader {
+	display: block;
+	height: 15px;
+	background: url(http://akcdn.okccdn.com/media/img/ads/hilarywinston/hilarywinston_header.png) top left no-repeat;
+	margin-left: 15px;
+	padding: 0 0 13px;
+}
+body.hilarywinstonmatch div.match_row.match_row_second div.user_info {
+	width: 320px;
+}
+body.hilarywinstonmatch div.match_row.match_row_second div.percentages {
+	width: 54px;
+	background: #fff;
+	right: 164px;
+	top: 0;
+}
+body.hilarywinstonmatch div.match_row.match_row_second div.percentages p {
+	font-size: 10px;
+	padding: 11px 0 12px;
+	border-bottom: 1px solid #eee;
+	line-height: 12px;
+	height: 24px;
+}
+body.hilarywinstonmatch div.match_row.match_row_second div.percentages p.enemy {
+	border: 0;
+}
+body.hilarywinstonmatch div.match_row.match_row_second div.percentages p span.percentage {
+	font-size: 11px;
+}
+body.hilarywinstonmatch div.match_row.match_row_second a#hilarywinstonmatchrow {
+	width: 164px;
+	height: 143px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: url(http://akcdn.okccdn.com/media/img/ads/hilarywinston/hilarywinston_plate.png) top left no-repeat;
+
+}
+body.hilarywinstonmatch div.match_row.match_row_second p.activity {
+	border: 0;
+}
+body.hilarywinstonmatch div.match_row.match_row_third {
+	border-top: 0;
+}

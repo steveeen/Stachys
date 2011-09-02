@@ -1,0 +1,85 @@
+/* 
+    Document   : test
+    Created on : 19.07.2011, 13:04:20
+    Author     : Mercedes
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+.myButton {
+	-moz-box-shadow:inset 1px 1px 9px 0px #ffffff;
+	-webkit-box-shadow:inset 1px 1px 9px 0px #ffffff;
+	box-shadow:inset 1px 1px 9px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #c5f58e) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #c5f58e 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#c5f58e');
+	background-color:#ededed;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #008a2c;
+	display:inline-block;
+	color:#474647;
+	font-family:Trebuchet MS;
+	font-size:16px;
+	font-weight:bold;
+	padding:7px 19px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.myButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c5f58e), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #c5f58e 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c5f58e', endColorstr='#ededed');
+	background-color:#c5f58e;
+}.myButton:active {
+	position:relative;
+	top:1px;
+}
+#pricerange div h3{
+ 
+     display: inline;
+}
+#pricerange div{
+   
+}
+#pricerange div ul {
+   display: inline;
+    margin-top: -2ex;
+   text-align: right;
+   
+}
+#pricerange div ul li {
+  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: pre-wrap;      /* current browsers */
+  word-wrap: break-word; /* IE */
+ 
+}
+#uiouoi{
+  overflow:hidden;
+  white-space: -moz-pre-wrap !important; /* Firefox 1.0-2.0 */
+  white-space: pre-wrap !important;      /* current browsers */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word !important; /* IE */ 
+    text-align: left;
+}
+.psliimg{
+    float: left;
+}
+.pslipricecol{
+    float: right;
+}
+.psli,.pslicont{
+    clear: both;
+}

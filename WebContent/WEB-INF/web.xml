@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="Stachysweb" version="2.5">
+  <display-name>StachysWeb</display-name>
+  <context-param>
+    <param-name>resteasy.role.based.security</param-name>
+    <param-value>true</param-value>
+  </context-param>
+  <filter>
+    <filter-name>HibernateFilter</filter-name>
+    <filter-class>de.kuub.stachys.HibernateSessionRequestFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>HibernateFilter</filter-name>
+    <url-pattern>/api/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description>JAX-RS Tools Generated - Do not modify</description>
+    <servlet-name>JAX-RS Servlet</servlet-name>
+    <servlet-class>org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher</servlet-class>
+    <init-param>
+      <param-name>javax.ws.rs.Application</param-name>
+      <param-value>de.kuub.stachys.restServices.StachysApplication</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JAX-RS Servlet</servlet-name>
+    <url-pattern>/api/*</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/error.jsf</location>
+  </error-page>
+  <security-constraint>
+    <display-name>Example Security Constraint</display-name>
+    <web-resource-collection>
+      <web-resource-name>Protected Area</web-resource-name>
+      <url-pattern>/protected/*</url-pattern>
+      <http-method>DELETE</http-method>
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+      <http-method>PUT</http-method>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>mapper</role-name>
+    </auth-constraint>
+    <user-data-constraint>
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Public</web-resource-name>
+      <description>Matches a few special pages.</description>
+      <url-pattern>/api/salt/*</url-pattern>
+    </web-resource-collection>
+  </security-constraint>
+  <security-role>
+    <role-name>anonymousSearcher</role-name>
+  </security-role>
+  <security-role>
+    <role-name>mapper</role-name>
+  </security-role>
+  <login-config>
+    <auth-method>FORM</auth-method>
+    <realm-name>realm</realm-name>
+    <form-login-config>
+      <form-login-page>/login.jsp</form-login-page>
+      <form-error-page>/error.jsp</form-error-page>
+    </form-login-config>
+  </login-config>
+</web-app>

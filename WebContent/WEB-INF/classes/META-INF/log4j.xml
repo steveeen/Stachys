@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration debug="true"
+	xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<param name="target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{dd.MM.yyyy HH:mm:ss.SSS}  %-7p  %-40.100C{6} %x - %m%n" />
+		</layout>
+	</appender>
+
+<!-- 	<appender name="ADC_DEMO" class="org.apache.log4j.RollingFileAppender"> -->
+<!-- 		Change the log path and file name here! -->
+<!-- 		<param name="File" value="/adc.log" /> -->
+<!-- 		<param name="Append" value="true" /> -->
+<!-- 		<param name="MaxFileSize" value="2MB" /> -->
+<!-- 		<param name="MaxBackupIndex" value="8" /> -->
+<!-- 		<layout class="org.apache.log4j.PatternLayout"> -->
+<!-- 			<param name="ConversionPattern" -->
+<!-- 				value="%d{dd.MM.yyyy HH:mm:ss.SSS}  %-7p  %-40.100C{6} %x - %m%n" /> -->
+<!-- 		</layout> -->
+<!-- 	</appender> -->
+
+	<appender name="LOG_APACHE" class="org.apache.log4j.RollingFileAppender">
+		<param name="target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{dd.MM.yyyy HH:mm:ss.SSS}  %-7p  %-40.100C{6} %x - %m%n" />
+		</layout>
+<!-- 		Change the log path and file name here! -->
+<!-- 		<param name="File" value="c:/ADC/logs/apache.log" /> -->
+<!-- 		<param name="Append" value="true" /> -->
+<!-- 		<param name="MaxFileSize" value="2MB" /> -->
+<!-- 		<param name="MaxBackupIndex" value="8" /> -->
+<!-- 		<layout class="org.apache.log4j.PatternLayout"> -->
+<!-- 			<param name="ConversionPattern" -->
+<!-- 				value="%d{dd.MM.yyyy HH:mm:ss.SSS}  %-7p  %-40.100C{6} %x - %m%n" /> -->
+<!-- 		</layout> -->
+	</appender>
+
+	<appender name="LOG_HIBERNATE" class="org.apache.log4j.RollingFileAppender">
+		<param name="target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{dd.MM.yyyy HH:mm:ss.SSS}  %-7p  %-40.100C{6} %x - %m%n" />
+		</layout>
+<!-- 		Change the log path and file name here! -->
+<!-- 		<param name="File" value="c:/ADC/logs/hibernate.log" /> -->
+<!-- 		<param name="Append" value="true" /> -->
+<!-- 		<param name="MaxFileSize" value="2MB" /> -->
+<!-- 		<param name="MaxBackupIndex" value="8" /> -->
+<!-- 		<layout class="org.apache.log4j.PatternLayout"> -->
+<!-- 			<param name="ConversionPattern" -->
+<!-- 				value="%d{dd.MM.yyyy HH:mm:ss.SSS}  %-7p  %-40.100C{6} %x - %m%n" /> -->
+<!-- 		</layout> -->
+	</appender>
+
+	
+	<!-- Hibernate -->
+	<logger name="org.hibernate">
+		<level value="ERROR" />
+		<appender-ref ref="LOG_HIBERNATE" />
+	</logger>
+
+	<!-- Apache -->
+	<logger name="org.apache">
+		<level value="DEBUG" />
+		<appender-ref ref="STDOUT" />
+	</logger>
+
+
+	<!--
+		DEFAULT: All log message are send to STDOUT. Log Level Order: DEBUG,
+		INFO, WARN, ERROR, FATAL
+	-->
+	<root>
+		<priority value="DEBUG" />
+		<appender-ref ref="STDOUT" />
+	</root>
+</log4j:configuration>

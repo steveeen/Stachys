@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF8">
+<title>RestTest</title>
+<script type="text/javascript" src="/StachysWeb/scripts/jquery-1.5.2.js"></script>
+<script type="text/javascript" language="javascript" src="/StachysWeb/scripts/jquery.dataTables.js"></script>
+<style type="text/css" title="currentStyle">
+			@import "/StachysWeb/css/demo_page.css";
+			@import "/StachysWeb/css/demo_table.css";
+		</style>
+</head>
+<body>
+<script type="text/javascript">
+var oTable;
+$(document).ready(function() {
+	oTable=$('#example').dataTable();
+         $('#refreshButton').click(function() {
+            var requestUrl ="../api/countdatas/" + $('#custName').val();
+            console.log(requestUrl); //firebug console output
+            $.getJSON(requestUrl,
+            function(data) {
+                console.log(this.data); //firebug console output
+                $("span#custoomers").html("ssss"+data.length);	
+					oTable.fnClearTable(false);
+				for(var i=0;i<data.length;i++){
+					oTable.fnAddData( [data[i].id,data[i].customername] ,false);
+				}
+					oTable.fnDraw();
+					
+              
+            });
+        });
+    });
+</script>
+
+<div style="width: 400px; font-family: Arial; font-size: 9pt;">
+    <table>
+        <tbody><tr>
+            <td colspan="2" style="padding-bottom: 10px;">
+                Ajax Abfragen:
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Name:
+            </td>
+            <td>
+                <input id="custName" size="10" type="text" ><br>
+            </td>
+        </tr>
+       
+        <tr>
+            <td colspan="2">
+                <div id="refreshButton" style="width: 80px; border: 1px solid gray; margin-top: 10px; padding: 2px;">Click here</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-top: 10px;">
+                Customersliste:<span id="custoomers"> </span></td>
+        </tr>
+        
+    </tbody></table>
+    <div id="container">
+    <div id="dynamic">
+<table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
+	<thead>
+		<tr>
+			<th width="20%">id</th>
+			<th width="25%">customername</th>
+		</tr>
+	</thead>
+	<tbody>
+		
+	</tbody>
+	<tfoot>
+		<tr>
+			<th>customerID</th>
+			<th>customerName</th>
+		</tr>
+	</tfoot>
+</table>
+			</div>
+			<div class="spacer"></div>
+    </div>
+</div>
+
+
+</body>
+</html>

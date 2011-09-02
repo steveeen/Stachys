@@ -1,0 +1,628 @@
+
+/* New Btns ------------------------------------------------------------------- */
+
+.btn {
+	background: url(http://akcdn.okccdn.com/media/img/btns/blue_34_cap.png) 100% 0 no-repeat;
+	
+}
+.btn.small {
+	background: url(http://akcdn.okccdn.com/media/img/btns/blue_25_cap.png) 100% 0 no-repeat;
+	font-size: 10px !important;
+	height: 25px;
+	line-height: 26px;
+	overflow: hidden;
+}
+
+.btn.lblue { background-image: url(http://akcdn.okccdn.com/media/img/btns/lblue_34_cap_.png); }
+.btn.pink { background-image: url(http://akcdn.okccdn.com/media/img/btns/pink_34_cap_.png); }
+.btn.gray { background-image: url(http://akcdn.okccdn.com/media/img/btns/gray_34_cap_.png); }
+.btn.green { background-image: url(http://akcdn.okccdn.com/media/img/btns/green_34_cap.png); }
+.btn.black { background-image: url(http://akcdn.okccdn.com/media/img/btns/black_34_cap.png); }
+.btn.yellow { background-image: url(http://akcdn.okccdn.com/media/img/btns/yellow_34_cap_.png); }
+.btn.white { background-image: url(http://akcdn.okccdn.com/media/img/btns/white_34_cap.png); }
+
+.btn.small.lblue { background-image: url(http://akcdn.okccdn.com/media/img/btns/lblue_25_cap_.png); }
+.btn.small.mblue { background-image: url(http://akcdn.okccdn.com/media/img/btns/mblue_25_cap_v3.png); }
+.btn.small.pink { background-image: url(http://akcdn.okccdn.com/media/img/btns/pink_25_cap_.png); }
+.btn.small.gray { background-image: url(http://akcdn.okccdn.com/media/img/btns/gray_25_cap_.png); }
+.btn.small.green { background-image: url(http://akcdn.okccdn.com/media/img/btns/green_25_cap.png); }
+.btn.small.black { background-image: url(http://akcdn.okccdn.com/media/img/btns/black_25_cap.png); }
+.btn.small.yellow { background-image: url(http://akcdn.okccdn.com/media/img/btns/yellow_25_cap_.png); }
+.btn.small.white { background-image: url(http://akcdn.okccdn.com/media/img/btns/white_25_cap_.png); }
+
+.btn a {
+	background: url(http://akcdn.okccdn.com/media/img/btns/blue_34.png) 0 0 no-repeat;
+	color: #FFF;
+	display: block;
+	margin-right: 3px;
+	padding-left: 3px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: normal;
+	text-shadow: 0px -1px 0px #0b2847;
+}
+.btn.small a {
+	background: url(http://akcdn.okccdn.com/media/img/btns/blue_25.png) 0 0 no-repeat;
+	height: 25px;
+	line-height: 25px;
+}
+.btn.green a {
+	text-shadow: 0px -1px 0px #4c9021;
+}
+.btn.pink a {
+	text-shadow: 0px -1px 0px #dd325e;
+}
+.btn.black a {
+	text-shadow: 0px -1px 0px #000;
+}
+.btn.white a {
+	color: #555 !important;
+	text-shadow: 0px 1px 0px #fff;
+}
+.btn.gray a {
+	color: #888 !important;
+	text-shadow: 0px 1px 0px #ccc;
+}
+.btn.yellow a {
+	color: #000;
+	text-shadow: none;
+}
+.btn.mblue a,
+.btn.lblue a {
+	color: #2963A4;
+	text-shadow: none;
+}
+
+.btn.lblue a { background-image: url(http://akcdn.okccdn.com/media/img/btns/lblue_34_.png); }
+.btn.pink a { background-image: url(http://akcdn.okccdn.com/media/img/btns/pink_34_.png); }
+.btn.gray a { background-image: url(http://akcdn.okccdn.com/media/img/btns/gray_34_.png); }
+.btn.green a { background-image: url(http://akcdn.okccdn.com/media/img/btns/green_34.png); }
+.btn.black a { background-image: url(http://akcdn.okccdn.com/media/img/btns/black_34.png); }
+.btn.yellow a { background-image: url(http://akcdn.okccdn.com/media/img/btns/yellow_34_.png); }
+.btn.white a { background-image: url(http://akcdn.okccdn.com/media/img/btns/white_34.png); }
+
+.btn.small.lblue a { background-image: url(http://akcdn.okccdn.com/media/img/btns/lblue_25_.png); }
+.btn.mblue a { background-image: url(http://akcdn.okccdn.com/media/img/btns/mblue_25_v3.png); }
+.btn.small.pink a { background-image: url(http://akcdn.okccdn.com/media/img/btns/pink_25_.png); }
+.btn.small.gray a { background-image: url(http://akcdn.okccdn.com/media/img/btns/gray_25_.png); }
+.btn.small.green a { background-image: url(http://akcdn.okccdn.com/media/img/btns/green_25.png); }
+.btn.small.black a { background-image: url(http://akcdn.okccdn.com/media/img/btns/black_25.png); }
+.btn.small.yellow a { background-image: url(http://akcdn.okccdn.com/media/img/btns/yellow_25_.png); }
+.btn.small.white a { background-image: url(http://akcdn.okccdn.com/media/img/btns/white_25_.png); }
+
+.btn:hover,
+.btn.hover { background-position: 100% 50%; }
+.btn a:hover { 
+	background-position: 0 50%;
+	text-decoration: none;
+}
+
+.btn:active,
+.btn.active { background-position: 100% 100%; }
+.btn a:active { background-position: 0 100%; }
+
+
+/* Gray buttons should appear deacivated */
+.btn.gray:active,
+.btn.gray.active,
+.btn.gray:hover,
+.btn.gray.hover {
+	background-position: 100% 0;
+	cursor: default;
+}
+.btn.gray a:active,
+.btn.gray a.active,
+.btn.gray a:hover,
+.btn.gray a.hover {
+	background-position: 0 0;
+	cursor: default;
+}
+
+/* STAR RATINGS ------------------------------------------------------------ */
+
+.star-rating,
+.star-rating a:hover,
+.star-rating a:active,
+.star-rating a:focus,
+.star-rating .current-rating { background: url(http://akcdn.okccdn.com/media/img/template/general_rating_16px.png) left -1000px repeat-x; }
+.star-rating:hover .current-rating { display: none; }
+.star-rating {
+	position:relative;
+	width: 80px;
+	height: 12px;
+	overflow:hidden;
+	list-style:none;
+	margin:0;
+	padding:0;
+	background-position: left top;
+}
+.star-rating li {
+	display: inline;
+	margin-left: 0;
+}
+.star-rating a,
+.star-rating .current-rating {
+	position:absolute;
+	top:0;
+	left:0;
+	text-indent:-1000em;
+	height: 12px;
+	line-height: 12px;
+	outline:none;
+	overflow:hidden;
+	border: none;
+}
+.star-rating a:hover,
+.star-rating a:active { background-position: left center; }
+.star-rating a.one-star {
+	width:20%;
+	z-index:6;
+}
+.star-rating a.two-stars {
+	width:40%;
+	z-index:5;
+}
+.star-rating a.three-stars {
+	width:60%;
+	z-index:4;
+}
+.star-rating a.four-stars {
+	width:80%;
+	z-index:3;
+}
+.star-rating a.five-stars {
+	width:100%;
+	z-index:2;
+}
+.star-rating .current-rating {
+	z-index:1;
+	background-position: left bottom;
+}
+.inline-rating {
+	display:-moz-inline-block;
+	display:-moz-inline-box;
+	display:inline-block;
+	vertical-align: middle;
+}
+.medium_gray,
+.medium_gray a:hover,
+.medium_gray a:active,
+.medium_gray a:focus,
+.medium_gray .current-rating { background: transparent url(http://akcdn.okccdn.com/media/img/misc/stars/old_8/stars_interactive.png) repeat-x scroll left -1000px; }
+.medium_gray .current-rating { background-position: left bottom; }
+.medium_gray {
+	height: 17px;
+	width: 90px;
+	background-position: left top;
+}
+.medium_gray a { height: 17px; }
+.medium_gray a:hover,
+.medium_gray a:active,
+.medium_gray a:focus { background-position: left center; }
+.medium_gray a,
+.medium_gray .current-rating {
+	position:absolute;
+	top:0;
+	left:0;
+	text-indent:-1000em;
+	height: 17px;
+	line-height: 17px;
+	outline:none;
+	overflow:hidden;
+	border: none;
+}
+.gold_stars,
+.gold_stars a:hover,
+.gold_stars a:active,
+.gold_stars a:focus,
+.gold_stars .current-rating { background: transparent url(http://akcdn.okccdn.com/media/img/buttons/gold_stars_24.png) repeat-x scroll left -1000px; }
+.gold_stars .current-rating { background-position: left bottom; }
+.gold_stars {
+	height: 15px;
+	width: 80px;
+	background-position: left top;
+}
+.gold_stars a { height: 15px; }
+.gold_stars a:hover,
+.gold_stars a:active,
+.gold_stars a:focus { background-position: left center; }
+.gold_stars a,
+.gold_stars .current-rating {
+	position:absolute;
+	top:0;
+	left:0;
+	text-indent:-1000em;
+	height: 15px;
+	line-height: 15px;
+	outline:none;
+	overflow:hidden;
+	border: none;
+}/* Styled Form Elements ---------------------------------------------------- */
+
+form.styled div.form_element {
+	float: left;
+	background: none;
+	margin-right: 17px;
+	margin-bottom: 0;
+}
+form.styled div.form_element p.button {
+	float: left;
+	background: transparent url(http://akcdn.okccdn.com/media/img/forms/select_bg_blue_24.png) left top no-repeat;
+	height: 25px;
+	line-height: 25px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+form.styled div.form_element p.button a,
+form.styled div.form_element ul li {
+	color: #2a65a6;
+	font-size: 11px;
+	font-weight: bold;
+}
+form.styled div.form_element ul li span,
+form.styled div.form_element p.button a span span {
+	font-weight: normal;
+}
+form.styled div.form_element p.button a {
+	text-decoration: none;
+	background: transparent url(http://akcdn.okccdn.com/media/img/forms/select_slide_blue_24.png) right top no-repeat;
+	display: block;
+	height: 25px;
+	margin-right: -13px;
+	line-height: 23px;
+	padding: 0 0 0 13px;
+}
+form.styled div.form_element p.button a span.arrow {
+	background: transparent url(http://akcdn.okccdn.com/media/img/forms/select_arrow_sprite.png) 0 -4px no-repeat;
+	padding: 2px 4px;
+	margin:10px 13px 0 0;
+	float: right;
+	overflow: hidden;
+}
+form.styled div.selector p.button a:hover span.arrow { background-position: 0 0; }
+form.styled div.selector p.button a:hover,
+form.styled div.selector ul li.hover {color: #628cbc;}
+form.styled div.form_element p.active { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_bg_open_blue_24.png); }
+form.styled div.form_element p.active a { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_slide_open_blue_24_b.png); }
+form.styled div.form_element .drop_wrap {
+	position: absolute;
+	padding-right: 13px;
+	margin-top: 23px;
+	width: 100%;
+	z-index: 1000;
+	background: transparent url(http://akcdn.okccdn.com/media/img/forms/select_drop_slide_24.png) right bottom no-repeat;
+}
+form.styled div.form_element ul {
+	background: transparent url(http://akcdn.okccdn.com/media/img/forms/select_drop_bg_24.png) left bottom no-repeat;
+	padding: 5px 0 11px 2px;
+	margin: 0 -1px 0 0;
+}
+form.styled div.form_element ul li {
+	padding: 0 0 0 10px;
+	line-height: 22px;
+	cursor: pointer;
+	width: 100%;
+}
+form.styled div.form_element ul li.divvy {
+	padding: 0 0 0 0;
+	width: auto;
+	margin: 7px 0 7px 10px;
+	border-bottom: 1px solid #bed0e4;
+}
+form.styled div.form_element.green ul li.divvy {
+	border-bottom: 1px solid #b4d49b;
+}
+form.styled div.form_element ul li.hover { background: #f8fafc; }
+form.styled span.remove {
+	overflow: hidden;
+	margin:4px 7px 0 -5px;
+	float: right;
+	padding: 7px;
+	background: transparent url(http://akcdn.okccdn.com/media/img/forms/element_remove_sprite.png) 0 0 no-repeat;
+}
+form.styled div.open span.remove {
+	display: none;
+}
+form.styled div.form_element.selector li input.checkbox {
+	float: left;
+	margin-left:0;
+	margin-right:6px;
+}
+form.styled span.r_hover { background-position: 0 -14px; }
+/* Pink */
+form.styled div.form_element.pink p.button a,
+form.styled div.form_element.pink ul li { color: #f83265; }
+form.styled div.selector.pink p.button a:hover,
+form.styled div.selector.pink ul li.hover { color: #fa698e; }
+form.styled div.form_element.pink ul li.hover { background: #fff5f7; }
+form.styled div.form_element.pink p.button { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_bg_pink_24_b.png); }
+form.styled div.form_element.pink p.button a { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_slide_pink_24_b.png); }
+form.styled div.form_element.pink p.button.active { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_bg_open_pink_24.png); }
+form.styled div.form_element.pink p.button.active a { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_slide_open_pink_24_b.png); }
+form.styled div.form_element.pink .drop_wrap { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_drop_slide_pink_24.png); }
+form.styled div.form_element.pink ul { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_drop_bg_pink_24.png); }
+form.styled div.form_element.pink p.button a span.arrow { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_arrow_sprite_pink.png); }
+form.styled div.scale span.remove, 
+form.styled div.form_element.pink span.remove { background-image: url(http://akcdn.okccdn.com/media/img/forms/element_remove_sprite_pink.png); }
+/* Green */
+form.styled div.form_element.green p.button a,
+form.styled div.form_element.green ul li { color: #4c9021; }
+form.styled div.selector.green p.button a:hover,
+form.styled div.selector.green ul li.hover { color: #4c9021; }
+form.styled div.form_element.green ul li.hover { background: #fff; }
+form.styled div.form_element.green p.button { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_bg_green_24_b.png); }
+form.styled div.form_element.green p.button a { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_slide_green_24_b.png); }
+form.styled div.form_element.green p.button.active { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_bg_open_green_24.png); }
+form.styled div.form_element.green p.button.active a { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_slide_open_green_24_b.png); }
+form.styled div.form_element.green .drop_wrap { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_drop_slide_green_24.png); }
+form.styled div.form_element.green ul { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_drop_bg_green_24.png); }
+form.styled div.form_element.green p.button a span.arrow { background-image: url(http://akcdn.okccdn.com/media/img/forms/select_arrow_sprite_green.png); }
+form.styled div.form_element.green p.button a,
+form.styled div.form_element.green ul li { color: #4c9021; }
+form.styled div.selector.green p.button a:hover,
+form.styled div.selector.green ul li.hover { color: #4c9021; }
+
+form.styled div.selector ul li.pro,
+form.styled div.selector ul li.hover.pro { color: #f83265; }
+
+form.styled div.form_element.green ul li.hover { background: #fff; }
+form.styled div.form_element ul li.disabled {
+	background: #e7eef5;
+	opacity: 0.3;
+}
+form.styled div.form_element.green ul li.disabled,
+form.styled div.form_element.green ul li.disabled { background: #e8f2e0; }
+form.styled div.form_element.pink ul li.disabled { background: #feeaef; }
+form.styled div#add_filter,
+form.styled div#add_filter .drop_wrap {
+	width: 160px;
+}
+
+form.styled #ages_drop input { text-align: center; }
+/* specifics */
+form.styled #dating_persona_drop li span.male,
+form.styled #dating_persona_drop li span.female {font-weight: bold;}
+
+form.styled ul#languages_drop,
+form.styled ul#location_interface_drop { float: left; }
+form.styled ul#languages_drop p,
+form.styled ul#location_interface_drop p {
+	float: left;
+	margin: 5px 0;
+}
+form.styled ul#languages_drop p.label,
+form.styled ul#location_interface_drop p.label {
+	clear: left;
+	width: 54px;
+}
+form.styled ul#location_interface_drop input.location_input {
+	color: #2A65A6;
+	font-size: 10px;
+	padding: 2px;
+	width:130px;
+	border: 1px solid #bed0e4;
+}
+form.styled ul#location_interface_drop p#find_btn { 
+	font-size: 10px;
+	color: #2A65A6;
+	font-weight: normal;
+}
+form.styled ul#location_interface_drop p.input { width: 180px; }
+form.styled ul#location_interface_drop p#city-input { width: 148px; }
+form.styled ul#location_interface_drop p.radios { margin-left: 54px; }
+form.styled ul#location_interface_drop p.radios input {
+	margin: 0 5px 0 0;
+	float: left;
+}
+form.styled ul#location_interface_drop p.radios span {
+	font-weight: bold;
+	display: block;
+	float: left;
+	line-height: 1.1em;
+	margin-right: 10px;
+}
+form.styled ul#location_interface_drop select {	margin-top: 2px; }
+form.styled ul#ages_drop li p { margin: 5px 0; }
+form.styled ul#ages_drop li p input {
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #bed0e4;
+	width: 30px;
+}
+form.styled ul#keywords_search_drop p { margin: 0; }
+form.styled ul#keywords_search_drop span.label { font-weight: bold; }
+form.styled ul#keywords_search_drop textarea {
+	height: 40px;
+	border: 1px solid #bed0e4;
+	width: 226px;
+}
+form.styled ul#heights_drop p { margin: 0; }
+form.styled p#city-input select { width: 170px; }
+form.styled p#lquery-notice {
+	line-height: 1.1em;
+	padding: 0px 10px 5px 55px;
+}
+form.styled ul#languages_drop p { margin: 2px 0; }
+form.styled p.checkbox {
+	width:auto;
+	clear:both;
+	font-weight: normal;
+}
+form.styled p.checkbox input {
+	float:left;
+	margin:4px 3px 0 0;
+}
+form.styled select#language {
+	margin-top: 2px;
+	width: 117px;
+}
+/* Sliders */
+form.styled p.slide_track {
+	width: 120px;
+	height: 8px;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	background: transparent url(http://akcdn.okccdn.com/media/img/forms/slider_track.png) no-repeat;
+}
+form.styled span.slide_knob {
+	display: block;
+	height: 14px;
+	width: 14px;
+	position: absolute;
+	top: -3px;
+	background: transparent url(http://akcdn.okccdn.com/media/img/forms/slider_knob.png) no-repeat;
+	cursor: pointer;
+}
+form.styled div.light p.slide_track { background-image: url(http://akcdn.okccdn.com/media/img/forms/slider_track_light.png); }
+form.styled div.light p.slide_knob { background-image: url(http://akcdn.okccdn.com/media/img/forms/slider_knob_light.png); }
+form.styled div.scale {
+	width: 120px;
+	padding: 10px;
+	float: left;
+	margin-bottom: 10px;
+	margin-right:6.5px;
+}
+form.styled div.personality_scaler {
+	background: transparent url(http://akcdn.okccdn.com/media/img/forms/flat_pro_sort_bg.png) 0 0 no-repeat;
+	height: 130px;
+}
+form.styled div.custom_scaler {
+	background: transparent url(http://akcdn.okccdn.com/media/img/forms/flat_pro_sort_bg_small.png) 0 0 no-repeat;
+	height: 77px;
+}
+form.styled div.scale select { font-size: 10px; }
+@media all and (min-width:0px) {
+	/* safari only */
+    :root head~body form.styled div.scale select { font-size: 11px; }
+}
+form.styled div.custom_scaler select { width: 97px; }
+form.styled div.personality_scaler select { width: 97px; }
+form.styled div.scale span.remove { margin:3px 1px 0 3px; }
+form.styled div.personality_scaler div.primary_scale,
+form.styled div.scale div.import_scale {
+	color: #f83265;
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 14px;
+}
+form.styled div.personality_scaler div.primary_scale { margin-top: 15px; }
+form.styled div.scale div.import_scale { margin-top: 14px; }
+form.styled div.custom_scaler div.import_scale {margin-top: 17px;}
+form.styled div.personality_scaler span.bound {	display: block; opacity: 0.6; background: #feeaef;}
+form.styled div.personality_scaler span.upper {	text-align: right; }
+form.styled div.scale span.relative {
+	font-weight: normal;
+	font-size: 9px;
+}
+form.styled div.scale p.importance {
+	text-align: center;
+	margin-bottom: 3px;
+}
+form.styled div.scale span.more { float: right; }
+form.styled div.scale span.less { float: left; }
+form.styled div.scale p.slide_track { margin: 2px 0; }
+form.styled div.scale span.slide_knob { left: 53px; }
+p.add_sort {
+	float: left;
+	margin-top: 3px;
+}
+p.add_sort a {
+	display: block;
+	width: 25px;
+	height: 25px;
+	float: left;
+	background: transparent url(http://akcdn.okccdn.com/media/img/forms/add_pro_sort.png) 0 0 no-repeat;
+}
+p.add_sort a:hover {
+	background-position: left bottom;
+}
+
+
+
+
+/* Classes -------------------------------------------------------------------- */
+
+.ir { 
+	letter-spacing : -1000em; 
+	text-indent: -999em; /* for FF 3.0.8 */
+}
+.hidden { display: none !important; }
+.success {
+	margin: 10px 0 10px 10px;
+	padding: 7px 10px;
+	width: 740px;
+	color: #fff;
+	background-color: #63a62f;
+}
+.error {
+	background: #F83265 10px 10px no-repeat;
+	clear: both;
+	color: #FFF;
+	padding: 7px 10px 7px 25px;
+}
+/* overrides 960 */
+.error.grid_13 {
+	margin-bottom: 10px;
+	width: 725px;
+}
+.opacity_20 { opacity: 0.2; }
+.opacity_40 { opacity: 0.4; }
+.opacity_50 { opacity: 0.5; }
+.opacity_60 { opacity: 0.6; }
+.opacity_80 { opacity: 0.8; }
+.round {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.round_top {
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+.round_bottom {
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+.round_top_left {
+	-moz-border-radius-topleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+}
+.round_bottom_left {
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+.round_top_right {
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+
+
+
+/* Media Selectors --------------------------------------------------------- */
+
+@media all and (min-width:0px) {
+	head~body:last-child .ir {
+		letter-spacing : normal;
+		text-indent : -999em;
+		overflow : hidden;
+	}
+}
+
+
+/* Faux-placeholder coloring ----------------------------------------------- */
+
+input[type='text'].emptyinput {
+	color: #a9a9a9;
+}
+
+
+
+
+
+
+

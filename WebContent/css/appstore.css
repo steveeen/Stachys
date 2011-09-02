@@ -1,0 +1,28 @@
+.spring {
+   border: thin solid black;
+    
+	font-size: small;
+	background-color: #ABE7FA;
+	font-family: Verdana
+}
+.buttons {
+   border: thin solid black;
+    
+	font-size: small;
+	background-color: #ABE7FA;
+	font-family: Verdana
+}
+.header {
+	font-size: small;
+	background-color: #ABE7FA;
+	font-family: Verdana
+	font-weight: bold
+}
+.row1 {
+
+	background-color: #EEEEEE;
+}
+.row1 {
+
+	background-color: #EFEFEF;
+}
