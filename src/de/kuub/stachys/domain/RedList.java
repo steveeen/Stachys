@@ -1,50 +1,46 @@
 /**
-* @(#) RedList.java
-*/
+ * @(#) RedList.java
+ */
 
 package de.kuub.stachys.domain;
 
 import java.math.BigDecimal;
 import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
-import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
 /**
-* @(#) Roteliste.java
-*/
+ * @(#) Roteliste.java
+ */
 @Entity
-@Table(name="redlist")
-public class RedList extends TracebleClass{
-	
+@Table(name = "redlist")
+public class RedList extends TracebleClass {
+
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="rl_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "rl_id")
 	private Integer rl_id;
-	
-	@Column(nullable=false, length=120)
+
+	@Column(nullable = false, length = 120)
 	private Integer country;
-	
-	@Column(nullable=false, precision=4)
+
+	@Column(nullable = false, precision = 4)
 	private BigDecimal year;
-	
-	@OneToMany(mappedBy="redList")
-	//@PrimaryKeyJoinColumn//(referencedColumnName="rl_id",table="redlist_species",insertable=true,updatable=true)
-	private Set<RedList_Species>redlistValues;
+
+	@OneToMany(mappedBy = "redList")
+	// @PrimaryKeyJoinColumn//(referencedColumnName="rl_id",table="redlist_species",insertable=true,updatable=true)
+	private Set<RedList_Species> redlistValues;
 
 	/**
 	 * @return the rl_id
@@ -54,7 +50,8 @@ public class RedList extends TracebleClass{
 	}
 
 	/**
-	 * @param rl_id the rl_id to set
+	 * @param rl_id
+	 *            the rl_id to set
 	 */
 	public void setRl_id(Integer rl_id) {
 		this.rl_id = rl_id;
@@ -68,7 +65,8 @@ public class RedList extends TracebleClass{
 	}
 
 	/**
-	 * @param country the country to set
+	 * @param country
+	 *            the country to set
 	 */
 	public void setCountry(Integer country) {
 		this.country = country;
@@ -82,11 +80,11 @@ public class RedList extends TracebleClass{
 	}
 
 	/**
-	 * @param year the year to set
+	 * @param year
+	 *            the year to set
 	 */
 	public void setYear(BigDecimal year) {
 		this.year = year;
 	}
-	
-	
+
 }
