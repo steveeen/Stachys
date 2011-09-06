@@ -89,7 +89,8 @@ body {
     /* For IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000')";
     /* For IE 5.5 - 7 */
-    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000');
+    filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000')";
+
 }
 #headline ul{
     display: inline;
@@ -120,8 +121,8 @@ body {
     white-space: nowrap;
     line-height: 1.2em;
     text-align: left;
-    z-index: 100;
-    border: 1px black transparent;
+    z-index: 3;
+    border: 1px solid transparent;
     -moz-border-radius: 0 0 4px 4px;
     -webkit-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px;
@@ -131,7 +132,7 @@ body {
     /* For IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000')";
     /* For IE 5.5 - 7 */
-    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000');
+    filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000')";
 }
 #timechooser .overlayPanel.hiddenOptions{
    left:0;       
@@ -145,7 +146,9 @@ body {
 
 .dropdownPanel{
     position: relative;
-    z-index: 50;
+    /* for IE bug 
+    z-index should be min. level 3 because some Slider-elements has 3*/
+    z-index:4;
 }
 #loginPanel {
     right: 0; 
@@ -198,7 +201,7 @@ a{
     /* For IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000')";
     /* For IE 5.5 - 7 */
-    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000');
+    filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000')";
     border: #4f4c4d solid 1px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -298,9 +301,7 @@ h5{
     margin-bottom: 12px;
 }
 #logreg span{
-    font-size: 0.85em;
-    cursor: pointer;
-    position: relative;
+  
 }
 
 #timechooser{ 
@@ -353,7 +354,7 @@ h5{
 #content {
     float: left;
     width: 65%;
-    min-width: 650px;
+    min-width: 610px;
     min-height: 600px;
     border: #4f4c4d solid 1px;
     -moz-border-radius: 4px;
@@ -414,7 +415,7 @@ h5{
     display:  inline;
     padding-right: 16px;
     margin-top: -5px;
-    padding-top: -5px;
+    padding-top: 5px;
     cursor: pointer;
 }
 
@@ -463,7 +464,7 @@ a.download-link:hover, a.download-link:active {
     color: #333333;
 }
 .ui-widget {
-    font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+    font-family: "Trebuchet MS",Tahoma,Verdana,Arial,sans-serif;
     font-size: 1.1em;
 }
 .ui-slider-horizontal .ui-slider-handle {
@@ -540,10 +541,7 @@ a.download-link:hover, a.download-link:active {
 .checkedListItem.selected{
     visibility: visible;
 }
-#price{
-   
-    
-}
+
 .inputFormLabels{
     font-weight: 600;
     font-size: medium;
@@ -559,7 +557,7 @@ a.download-link:hover, a.download-link:active {
    
 }
 #price .textinputFocused{
-    background-color: wheat;
+    background-color: WHEAT;
     border: solid 1px #A2A2A2
 }
 #slider-range{
@@ -581,13 +579,12 @@ li:hover{
     padding: 3px;
     margin-bottom: -0.1em;
     text-shadow: 0 1px #F0F0F0;
-    font: 12px/15px Helvetica Neue,Arial,"Lucida Grande",Sans-serif;
+    font: 12px/15px "Helvetica Neue",Arial,"Lucida Grande",Sans-serif;
 /*}
 .button label{*/
     text-overflow:ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow:ellipsis;
 }
 
 .button:hover, .button:focus {
@@ -622,8 +619,8 @@ li:hover{
     padding: 0.1em;
     margin:  4px 1px;
     line-height: 1.5em;
+    border: solid 1px #000000
     box-shadow: 0 0 5px #2288CC;
-    border: 1px black transparent;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
@@ -666,6 +663,13 @@ li:hover{
     vertical-align: middle;
     
 }
+.logregItm{
+	display: inline;
+   font-size: 0.85em;
+    cursor: pointer;
+    position: relative;
+    float: right;
+}
 .mainitemlist{
     clear: both;
     margin: 2px;
@@ -692,6 +696,6 @@ sub{
     letter-spacing: 1px;
     direction: rtl;
 }
-sup{
-    
+.forceRedraw{
+z-index: 5;
 }

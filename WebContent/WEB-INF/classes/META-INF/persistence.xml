@@ -15,7 +15,6 @@
 		<class>de.kuub.stachys.domain.SpeciesPictures</class>
 		<class>de.kuub.stachys.domain.SpeciesLocalNames</class>
 		<class>de.kuub.stachys.domain.Species</class>
-		<class>de.kuub.stachys.domain.RedList_Species</class>
 		<class>de.kuub.stachys.domain.RedList</class>
 		<class>de.kuub.stachys.domain.Publications</class>
 		<class>de.kuub.stachys.domain.PublicationPK</class>
@@ -27,6 +26,7 @@
 		<class>de.kuub.stachys.domain.CountingDatas</class>
 		<class>de.kuub.stachys.domain.Biotope</class>
 		<class>de.kuub.stachys.Transactions</class>
+		<class>de.kuub.stachys.domain.RedList_Species</class>
 		<properties>
 		   <property name="javax.persistence.jdbc.driver" value="org.postgis.DriverWrapper"/>
            <property name="javax.persistence.jdbc.user" value="postgres"/>

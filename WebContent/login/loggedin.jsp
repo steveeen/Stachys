@@ -1,7 +1,6 @@
 <%
-  if (request.getParameter("logoff") != null) {
-    session.invalidate();
-    response.sendRedirect("index.jsp");
+  if (request.isUserInRole("mapper")) {
+    response.sendRedirect(request.getContextPath()+"/mapper/");
     return;
   }
 %>
@@ -53,7 +52,7 @@ enter it here:
 
 If you have configured this app for form-based authentication, you can log
 off by clicking
-<a href='<%= response.encodeURL("index.jsp?logoff=true") %>'>here</a>.
+<a href='<%= response.encodeURL(request.getContextPath()+"/logoff.jsp") %>'>here</a>.
 This should cause you to be returned to the logon page after the redirect
 that is performed.
 

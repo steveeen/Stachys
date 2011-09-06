@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<%
+  if (request.isUserInRole("mapper")) {
+    response.sendRedirect(request.getContextPath()+"/mapper/");
+    return;
+  }
+%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+
+<!DOCTYPE html >
 <html lang="de">
     <head>
         <title>Sprenters</title>
@@ -73,7 +82,7 @@
                     <div class="logregItm">
                         <div id="loginBtn">Anmelden<span class="selectDropdown">▼</span></div>
                         <div id="loginPanel" class="overlayPanel hiddenOptions">
-                            <form action="/loggedin.jsp?j_security_check" id="signin" method="post">
+                            <form action="./loggedin.jsp?j_security_check" id="signin" method="post">
                                 <p>
                                     <label class="inlinelabel" for="j_username">Username</label>
                                     <input type="text" tabindex="3" name="j_username" value=""
