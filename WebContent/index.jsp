@@ -10,10 +10,10 @@
 <!DOCTYPE html >
 <html lang="de">
     <head>
-        <title>Sprenters</title>
+        <title>Stachys</title>
         <meta charset="utf-8" />
         <meta name="Content-Language" content="de" >
-        <meta name="COPYRIGHT" content="Copyright (c) 2011 by Sprenters.com" >
+        <meta name="COPYRIGHT" content="Copyright (c) 2011 by Stachys" >
         <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
         <meta name="KEYWORDS" content="" >
         <meta name="DESCRIPTION" content="description" >
@@ -53,30 +53,8 @@
 
     </head>
     <body >
-        <div id="headline">
-            <ul id="headlineList">
-                <li><a href="localhost/Weblayout">Haushalt</a><span class="hlseparator">|</span></li>
-                <li><a href="localhost/Weblayout">Werkzeug</a><span class="hlseparator">|</span></li>
-                <li><a href="localhost/Weblayout">Dienstleistungen</a><span class="hlseparator">|</span></li>
-                <li><a href="localhost/Weblayout">Garten</a><span class="hlseparator">|</span></li>
-                <li><a href="localhost/Weblayout">Garage</a><span class="hlseparator">|</span></li>
-                <li><a href="localhost/Weblayout">Spielzeug</a><span class="hlseparator">|</span></li>
-                <li><a href="localhost/Weblayout">Computer</a><span class="hlseparator">|</span></li>
-                <li><a href="localhost/Weblayout">Luxus</a><span class="hlseparator">|</span></li>
-                <li><a href="localhost/Weblayout">Obskures</a><span class="hlseparator">|</span></li>
-                <li><a href="localhost/Weblayout">Seltenes</a><span class="hlseparator">|</span></li>
-                <li><a href="localhost/Weblayout">Haushalt</a><span class="hlseparator">|</span></li>
-                <li><a href="localhost/Weblayout">Haushalt</a><span class="hlseparator">|</span></li>
-                <li><a href="localhost/Weblayout">Haushalt</a><span class="hlseparator">|</span></li>
-                <li><a href="localhost/Weblayout">Haushalt</a><span class="hlseparator">|</span></li>
-                <li><a href="localhost/Weblayout">Haushalt</a><span class="hlseparator">|</span></li>
-                <li><a href="localhost/Weblayout">Haushalt</a><span class="hlseparator">|</span></li>
-            </ul>
-            <div id="hlChange"><a href="localhost/Weblayout">ändern<span class="selectDropdown">▼</span></a></div>
-        </div>
-        <div id="wrapper">
+       <div id="wrapper">
             <div id="header">
-                <img src="picbils/sprenterslogo.png"/>
                 <div id="logreg">
                     <div class="logregItm">Registrieren</div>
                     <div class="logregItm">
@@ -102,60 +80,9 @@
                                 <p > <a href="#" title="If you remember your password, try logging in with your email" id="forgot_username_link">Forgot your username?</a> </p>
                             </form>
                         </div>
-                    </div>
-                    <div class="logregItm">
-                        <div id="voteLanguageBtn">deutsch <span class="activeCurrency">€</span><span class="selectDropdown">▼</span></div>
-                        <div id="currLangPanel" class="overlayPanel hiddenOptions">
-                            <ul id="language_currency_selector">
-                                <li class="instruction">Sprache ändern</li>
-                                <li id="language_selector_en" class="language option">
-                                    English</li>
-                                <li id="language_selector_es" class="language option">
-                                    Español</li>
-                                <li id="language_selector_fr" class="language option">
-                                    Français</li>
-                                <li id="language_selector_it" class="language option">
-                                    Italiano</li>
-                                <li id="language_selector_pt" class="language option">
-                                    Português</li>
-                                <li id="language_selector_ru" class="language option">
-                                    Русский</li>
-                                <li id="language_selector_zh" class="language option">
-                                   	中文(简体)</li>
-                                <li id="language_selector_ko" class="language option">
-                                                          한국어</li>
-                                <li class="instruction">Währung auswählen</li>
-                                <li id="currency_selector_AUD" class="currency option"> $ AUD </li>
-                                <li id="currency_selector_BRL" class="currency option"> R$ BRL </li>
-                                <li id="currency_selector_CAD" class="currency option"> $ CAD </li>
-                                <li id="currency_selector_CHF" class="currency option"> CHF CHF </li>
-                                <li id="currency_selector_CZK" class="currency option"> Kč CZK </li>
-                                <li id="currency_selector_DKK" class="currency option"> kr DKK </li>
-                                <li id="currency_selector_GBP" class="currency option"> £ GBP </li>
-                                <li id="currency_selector_HKD" class="currency option"> $ HKD </li>
-                                <li id="currency_selector_HUF" class="currency option"> Ft HUF </li>
-                                <li id="currency_selector_ILS" class="currency option"> ₪ ILS </li>
-                                <li id="currency_selector_JPY" class="currency option"> ¥ JPY </li>
-                                <li id="currency_selector_NOK" class="currency option"> kr NOK </li>
-                                <li id="currency_selector_RUB" class="currency option"> руб RUB </li>
-                                <li id="currency_selector_SEK" class="currency option"> kr SEK </li>
-                                <li id="currency_selector_USD" class="currency option"> $ USD </li>
-                                <li id="currency_selector_ZAR" class="currency option"> R ZAR </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-
+                    </div>               
                 </div>
-
-
             </div>
-            <div id="header2">
-		Hallo Du.<br/>
-                Du fragst dich sicher: Was ist sprenters? Wozu gibts euch denn? Nun, wir erklären es dir
-                schnell. Sprenters soll dir helfen Geld zu sparen oder auch Geld zu verdienen. Du fragst dich jetzt bestimmt:
-                Wie verdiene     ich denn Geld mit sprenters?
             </div>
             <div id="breadcrump">
                 Home ›
@@ -163,29 +90,29 @@
             <div id="container" >
                 <div id="side-a">
                     <div id="price" class="inputForms overlayParent">
-                        <label class="inputFormLabels ">Price (<span title="choose Currency on Mainmenue" class="activeCurrency">€</span>)</label><span class="selectDropdown">▼</span>
+                        <label class="inputFormLabels ">Anzahl</label><span class="selectDropdown">▼</span>
                         <div id="timechooser" class="dropdownPanel" >
                             <noscript><select id="nS_timechooserList">
                                 <optgroup>
-                                    <option>per Hour</option>
-                                    <option>per Day</option>
-                                    <option selected="selected">per Week</option>
-                                    <option>per Month</option>
+                                    <option>Triebe</option>
+                                    <option>Stengel</option>
+                                    <option selected="selected">Individuen</option>
+                                    <option>blühnende Individuen</option>
                                 </optgroup>
                             </select>
                             </noscript>
                             <input id="tcL_selectValue" type="hidden" value="tcL_3"/>
                             <button id="tcL_button" class="button" tabindex="1"><span id="tcL_btn_label">per week</span><span class="selectDropdown">▼</span></button>
                             <ul id="timechooserList" class="overlayPanel hiddenOptions">
-                                <li ><label id="tcL_1" >per Hour</label><span class="checkedListItem">✓</span></li>
-                                <li ><label id="tcL_2" >per Day</label><span class="checkedListItem">✓</span></li>
-                                <li ><label id="tcL_3" >per Week</label><span class="checkedListItem selected">✓</span></li>
-                                <li ><label id="tcL_4" >per Month</label><span class="checkedListItem">✓</span></li>
+                                <li ><label id="tcL_1" >Triebe</label><span class="checkedListItem">✓</span></li>
+                                <li ><label id="tcL_2" >Stengel</label><span class="checkedListItem">✓</span></li>
+                                <li ><label id="tcL_3" >Individuen</label><span class="checkedListItem selected">✓</span></li>
+                                <li ><label id="tcL_4" >blühnende Individuen</label><span class="checkedListItem">✓</span></li>
                             </ul>
                         </div>
                         <p >
-                            <input type="text" id="minAmount" value=""  size="3" maxlength="6" /><span class="activeCurrency">€</span> -
-                            <input type="text" id="maxAmount" value="" size="3" maxlength="6" /><span class="activeCurrency">€</span>
+                            <input type="text" id="minAmount" value=""  size="3" maxlength="6" /> -
+                            <input type="text" id="maxAmount" value="" size="3" maxlength="6" />
                         </p>
                         <div class="hitCounter">580</div> 
                         <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
@@ -464,16 +391,6 @@
                             <li>Entwickler AGB</li>
                             <li>Externe Software</li>
                             <li>Mobile Versionen</li>
-                        </ul>
-                    </div>
-                    <div class="footColm">
-                        <h6>Sprecht mit uns</h6>
-                        <ul>
-                            <li>Videochat</li>
-                            <li>Facebook</li>
-                            <li>Twitter</li>
-                            <li>IMs and Chats</li>
-                            <li>E-Mails</li>
                         </ul>
                     </div>
                     <div class="footColm">
